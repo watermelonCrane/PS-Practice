@@ -51,6 +51,7 @@ int main() {
 
 int countNum(int N) {
     if (N == 0) return 1;   //0 이 들어왔을 때도 한자리수로 표시한다.
+    //개선 가능한 부분!!!! do while구문을 사용하면 되었다!!
 
     int count = 0;
 

@@ -9,7 +9,6 @@ bool find(std::vector<std::string> log, std::string tmp);
 
 int main() {
     std::cin.tie(NULL);
-    std::cout.tie(NULL);
     std::ios_base::sync_with_stdio(false);
 
     int N, QM;

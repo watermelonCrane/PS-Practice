@@ -1,4 +1,6 @@
 //실패
+//230820 : 어이없게 틀렸던 거였음. 출력함수를 만들어 놓고서 안쓰고 그냥 숫자만 출력했었음 ㅋㅋㅋ
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -30,14 +32,14 @@ int main() {
     std::vector<bool> isnum(3);
     for (int i = 0; i < 3; i++) {
         std::cin >> v[i];
-        if (v[i].back() < 58) isnum[i] = true;
+        if (v[i][0] < 58) isnum[i] = true;
         else false;
     }
 
     for (int i = 0; i < 3; i++) {
         if (isnum[i]) {
             int tmp = std::stoi(v[i]);
-            std::cout << tmp + 3 - i;
+            print_FizzBuzz(tmp + 3 - i);
             break;
         }
     }

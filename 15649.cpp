@@ -1,5 +1,6 @@
 //백트래킹???
 //쨌든 성공
+//참고글 https://veggie-garden.tistory.com/24
 #include <iostream>
 #include <vector>
 #include <algorithm>

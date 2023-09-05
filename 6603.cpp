@@ -1,4 +1,5 @@
 //성공
+//이거랑 15650번이랑 뭐가 다르지?
 #include <iostream>
 #include <vector>
 using namespace std;

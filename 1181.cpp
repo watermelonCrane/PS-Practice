@@ -23,13 +23,9 @@ int main() {
     int N;
     cin >> N;
 
-    vector<string> v;
-    for (int i = 0; i < N; i++) {
-        string tmp;
-        cin >> tmp;
-        if (find(v.begin(), v.end(), tmp) == v.end()) {
-            v.push_back(tmp);
-        }
+    vector<string> v(N);
+    for (auto& x: v) {
+        cin >> x;
     }
 
     sort(v.begin(), v.end(), compare);

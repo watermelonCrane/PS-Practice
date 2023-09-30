@@ -1,20 +1,36 @@
-#include <cstdio>
+//성공
+#include <iostream>
 #include <vector>
+using namespace std;
 
-bool operator<(std::pair<int, int>& p1, std::pair<int, int>& p2) {
-    return p1.first < p2.first && p1.second < p2.second;
+bool operator<(pair<int, int>& a, pair<int, int>& b) {
+    return a.first < b.first && a.second < b.second;
 }
 
-
 int main() {
-    std::vector<std::pair<int, int>> ppl;
+    cin.tie(nullptr);
+    ios::sync_with_stdio(false);
+
     int N;
-    scanf("%d", &N);
-    
+    cin >> N;
+
+    vector<pair<int, int>> listmob(N);
+    for (auto& a: listmob) {
+        int x, y;
+        cin >> x >> y;
+        a = {x, y};
+    }
+
+    vector<int> rank(N, 0);
     for (int i = 0; i < N; i++) {
-        std::pair<int, int> tmp;
-        scanf("%d %d", &tmp.first, &tmp.second);
-        ppl.push_back(tmp);
+        for (int k = 0; k < N; k++) {
+            if (k == i) continue;
+            if (listmob[i] < listmob[k]) rank[i]++;
+        }
+    }
+
+    for (auto& x: rank) {
+        cout << x + 1 << ' ';
     }
 
     return 0;

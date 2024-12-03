@@ -1,0 +1,8 @@
+#: comment
+
+# no .exe files
+*.exe
+
+# no vscode setting files
+.vscode/
+

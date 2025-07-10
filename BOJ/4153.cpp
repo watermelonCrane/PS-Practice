@@ -4,8 +4,8 @@
 #include <cmath>
 
 using namespace std;
-const char* WRONG = "wrong";
-const char* RIGHT = "right";
+const char* WRONG = "wrong\n";
+const char* RIGHT = "right\n";
 
 vector<int> makeTriangle() {
     vector<int> tri(3);

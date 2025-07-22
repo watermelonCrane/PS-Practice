@@ -26,12 +26,6 @@ int main() {
         cout << bound.second - bound.first;
         cout << ' ';
     }
-    
-    
-
-
-
-
 
     return 0;
 }
